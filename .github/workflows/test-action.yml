@@ -9,7 +9,7 @@ jobs:
       - name: Check PR title
         run: |
           title="${{ github.event.pull_request.title }}"
-          if [[ $title =~ ^octocat ]]; then
+          if [[ $title =~ ^test ]]; then
           echo "PR title starts with 'octocat'"
           exit 0
           else
